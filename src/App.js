@@ -5,8 +5,8 @@ import Nav from './components/Nav';
 import Secondsegment from './components/Secondsegment';
 import Thirdsegment from './components/Thirdsegment';
 import Fourthsegment from './components/Fourthsegment';
-import Fifthsegment from './components/Fifthsegment';
 import Footer from './components/Footer';
+import ShowMore from './components/ShowMore';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Secondsegment/>
       <Thirdsegment/>
       <Fourthsegment/>
-      <Fifthsegment/>
+      <ShowMore/>
       <Footer/>
     </div>
   );

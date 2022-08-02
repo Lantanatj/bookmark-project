@@ -71,7 +71,7 @@ const Fifthsegment = () => {
                 </div>
             </div>
             <br />
-            <ShowMore />
+            
         </div>
 
 
