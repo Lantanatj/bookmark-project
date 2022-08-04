@@ -1,23 +1,27 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 
 
-const ShowMore= () => {
-    const[state, setState] = useState(false)
+const ShowMore = () => {
+    const [state, setState] = useState(false)
     return (
-       <div className='container-fluid w-75'>
-           
-           {state &&<MoreDetails />}
-           <button className='btn btn-primary w-50  showmorebtn' onClick={()=>{setState(!state)}}>Read More</button>
-       </div>
-     )
-    }
+        <div className='container-fluid text-center'>
 
-    let MoreDetails =()=>{
-        return (
-            <div className='container-fluid text-center'>
-            <h1>Frequently Asked Question</h1>
-            <p >Here are some of our FAQS.if you have any questions<br />
-                you'd like answered,please feel free to email us </p>
+
+            
+                <h1>Frequently Asked Question</h1>
+                <p >Here are some of our FAQS.if you have any questions<br />
+                    you'd like answered,please feel free to email us </p>
+            
+
+            {state && <MoreDetails />}
+            <button className='btn btn-primary   showmorebtn' onClick={() => { setState(!state) }}>More</button>
+        </div>
+    )
+}
+
+let MoreDetails = () => {
+    return (
+        <div className='container-fluid text-center'>
 
             <div className="accordion " id="accordionExample ">
                 <div className="accordion-item ">
@@ -29,9 +33,9 @@ const ShowMore= () => {
                     <div id="collapseOne" className='accordion-collapse collapse show' aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div className='accordion-body'>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi, molestias quidem repellat perspiciatis aperiam voluptates,
-                                qui minima dolore ducimus, ipsum illo perferendis eligendi ipsam deleniti iste corporis ratione sapiente.Lorem, ipsum dolor sit amet 
-                                 molestias quidem repellat perspiciatis aperiam voluptates,
-                                qui minima dolore ducimus, ipsum illo perferendis eligendi ipsam deleniti iste corporis 
+                            qui minima dolore ducimus, ipsum illo perferendis eligendi ipsam deleniti iste corporis ratione sapiente.Lorem, ipsum dolor sit amet
+                            molestias quidem repellat perspiciatis aperiam voluptates,
+                            qui minima dolore ducimus, ipsum illo perferendis eligendi ipsam deleniti iste corporis
                         </div>
                     </div>
                 </div>
@@ -59,12 +63,12 @@ const ShowMore= () => {
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                             It is hidden by default, until the collapse plugin adds
-                                the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
-                                You can modify any of this with custom CSS or overriding our default variables.
-                                It's also worth noting that just about any HTML can go within. though the transition does limit overflow.
-                            </div>
+                            It is hidden by default, until the collapse plugin adds
+                            the appropriate classes that we use to style each element.
+                            These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                            You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within. though the transition does limit overflow.
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -75,14 +79,14 @@ const ShowMore= () => {
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                             It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
+                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
                     </div>
                 </div>
             </div>
             <br />
-        
+
         </div>
-        )
-    } 
-    export default ShowMore
+    )
+}
+export default ShowMore

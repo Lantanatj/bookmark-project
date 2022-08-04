@@ -6,14 +6,14 @@ import logo from '../my-images/logo-bookmark.svg'
 const Footer = () => {
   return (
     <div className='container-fluid text-white  mt-2'>
-      <div className='firstfooter text-center p-3 '>
+      <div className='firstfooter text-center p-3 bg-primary'>
         <div>
           <p>35,000+ Already JOINED</p>
           <h3>Stay up-to-date with what we are doing</h3>
         </div>
         <div>
           <input type='text' placeholder='Enter a message' />
-          <button className='btn bn-primary footerbtn'>Send</button>
+          <button className='btn btn-primary footerbtn'>Send</button>
         </div>
       </div>
       <div className='container-fluid'> </div>
